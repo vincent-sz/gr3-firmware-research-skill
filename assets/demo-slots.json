@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic research examples only: six neutral parameter records with historical identity labels. No firmware builder consumes this file in v0.1; it cannot exercise a production pipeline and is not a real preset pack.",
+  "slots": [
+    {
+      "index": 0,
+      "enabled": true,
+      "display_name": "Demo Slot 1",
+      "coefficient_source": "generated:identity-q10",
+      "icon_source": "generated:demo-1",
+      "image_control_parameters": {
+        "saturation": 4,
+        "hue": 4,
+        "high_low": 4,
+        "contrast": 4,
+        "highlight": 4,
+        "shadow": 4,
+        "sharpness": 4,
+        "shading": 4,
+        "clarity": 4
+      },
+      "grain_default": "off",
+      "metadata_identity": {
+        "public": 30,
+        "dng_code": "0x010C"
+      }
+    },
+    {
+      "index": 1,
+      "enabled": true,
+      "display_name": "Demo Slot 2",
+      "coefficient_source": "generated:identity-q10",
+      "icon_source": "generated:demo-2",
+      "image_control_parameters": {
+        "saturation": 4,
+        "hue": 4,
+        "high_low": 4,
+        "contrast": 4,
+        "highlight": 4,
+        "shadow": 4,
+        "sharpness": 4,
+        "shading": 4,
+        "clarity": 4
+      },
+      "grain_default": "off",
+      "metadata_identity": {
+        "public": 31,
+        "dng_code": "0x010D"
+      }
+    },
+    {
+      "index": 2,
+      "enabled": true,
+      "display_name": "Demo Slot 3",
+      "coefficient_source": "generated:identity-q10",
+      "icon_source": "generated:demo-3",
+      "image_control_parameters": {
+        "saturation": 4,
+        "hue": 4,
+        "high_low": 4,
+        "contrast": 4,
+        "highlight": 4,
+        "shadow": 4,
+        "sharpness": 4,
+        "shading": 4,
+        "clarity": 4
+      },
+      "grain_default": "off",
+      "metadata_identity": {
+        "public": 32,
+        "dng_code": "0x010E"
+      }
+    },
+    {
+      "index": 3,
+      "enabled": true,
+      "display_name": "Demo Slot 4",
+      "coefficient_source": "generated:identity-q10",
+      "icon_source": "generated:demo-4",
+      "image_control_parameters": {
+        "saturation": 4,
+        "hue": 4,
+        "high_low": 4,
+        "contrast": 4,
+        "highlight": 4,
+        "shadow": 4,
+        "sharpness": 4,
+        "shading": 4,
+        "clarity": 4
+      },
+      "grain_default": "off",
+      "metadata_identity": {
+        "public": 33,
+        "dng_code": "0x010F"
+      }
+    },
+    {
+      "index": 4,
+      "enabled": true,
+      "display_name": "Demo Slot 5",
+      "coefficient_source": "generated:identity-q10",
+      "icon_source": "generated:demo-5",
+      "image_control_parameters": {
+        "saturation": 4,
+        "hue": 4,
+        "high_low": 4,
+        "contrast": 4,
+        "highlight": 4,
+        "shadow": 4,
+        "sharpness": 4,
+        "shading": 4,
+        "clarity": 4
+      },
+      "grain_default": "off",
+      "metadata_identity": {
+        "public": 34,
+        "dng_code": "0x0110"
+      }
+    },
+    {
+      "index": 5,
+      "enabled": true,
+      "display_name": "Demo Slot 6",
+      "coefficient_source": "generated:identity-q10",
+      "icon_source": "generated:demo-6",
+      "image_control_parameters": {
+        "saturation": 4,
+        "hue": 4,
+        "high_low": 4,
+        "contrast": 4,
+        "highlight": 4,
+        "shadow": 4,
+        "sharpness": 4,
+        "shading": 4,
+        "clarity": 4
+      },
+      "grain_default": "off",
+      "metadata_identity": {
+        "public": 35,
+        "dng_code": "0x0111"
+      }
+    }
+  ],
+  "notes": [
+    "Parameter values use the native 9-step scale (0..8); 4 is the middle step, used here as a neutral demo value.",
+    "Grain default 'off' maps to the native enum 0.",
+    "public 30..35 / dng 0x010C..0x0111 are the verified public<->DNG identity range of the current framework."
+  ]
+}

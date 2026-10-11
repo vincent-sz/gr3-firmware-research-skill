@@ -1,0 +1,25 @@
+name: release-content-checks
+on: [push, pull_request]
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bounded content scan of tracked working tree
+        run: |
+          git archive --format=tar HEAD > /tmp/gr3-public-tree.tar
+          python3 tools/release_scan.py /tmp/gr3-public-tree.tar
+          mkdir /tmp/gr3-public-tree
+          tar -xf /tmp/gr3-public-tree.tar -C /tmp/gr3-public-tree
+      - name: Public surface and evidence contract
+        run: python3 tools/check_public_surface.py /tmp/gr3-public-tree
+      - name: Bilingual README concepts
+        run: python3 tools/check_readme_bilingual.py /tmp/gr3-public-tree/README.md
+      - name: Adversarial release-content tests
+        run: python3 /tmp/gr3-public-tree/tests/test_release_checks.py
+# No claim to scan deleted historical blobs. CLEAN_PUBLIC_HISTORY_REQUIRED:
+# publish a new independent repository with a clean first public commit.

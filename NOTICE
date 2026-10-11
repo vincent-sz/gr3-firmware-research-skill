@@ -1,0 +1,25 @@
+NOTICE
+======
+Independent community GR III Firmware Research Skill, v0.1.
+Not affiliated with or endorsed by RICOH IMAGING. Product marks belong to their owners.
+
+This repository does not host, mirror, download, accept uploads of, remotely modify,
+distribute or flash RICOH firmware. No candidate builder, repacker, firmware safety
+validator or SD write capability is included in this release.
+
+MIT covers original project code and documentation only. It grants no rights to
+RICOH firmware, third-party presets or other user-supplied materials. Available release
+review found no bundled third-party material; this is not a universal authorship or
+legal determination. Future reuse requires provenance and license review.
+
+RICOH's official download agreement restricts modification/reverse engineering and
+third-party transfer. Local-only research and no distribution do not eliminate those
+agreement or legal risks. See README and SAFETY for the official source.
+
+Modifying firmware can permanently brick a camera. Complete boot failure, interrupted
+flashing, flash corruption or bootloader failure have NO VERIFIED RECOVERY PATH.
+Offline content scans are not a safety validator. Persistent-state rollback
+compatibility is NOT FULLY PROVEN; RAM headroom is not proven.
+
+CLEAN_PUBLIC_HISTORY_REQUIRED: a new independent repository and clean first public
+commit, without private development Git history.

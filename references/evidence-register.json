@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "levels": [
+    "DEVICE VERIFIED",
+    "INHERITED BY STRUCTURAL EQUIVALENCE",
+    "OFFLINE_BUILD_VERIFIED",
+    "STATIC_VERIFIED",
+    "UNKNOWN",
+    "RESEARCH_ONLY"
+  ],
+  "official_root_sha256": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+  "golden_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+  "parent_candidate_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+  "scope_note": "Historical records summarized for research. No firmware included; no device retest in this release review; classifications do not certify new helper or new candidate behavior.",
+  "features": [
+    {
+      "feature": "six-slot",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "scope": "public 30..35 / processing 26..31 / isolated shared framework",
+      "evidence_level": "INHERITED BY STRUCTURAL EQUIVALENCE",
+      "evidence_source": "historical-evidence-summary.md#historical-device-reports",
+      "device_tested_candidate_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "inherited_from_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "structural_equivalence_source": "historical-evidence-summary.md#limited-delta-evidence",
+      "limitations": "Historical whole-build user acceptance, not individual measurements for every slot/combination."
+    },
+    {
+      "feature": "Grain",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "scope": "Legacy color metadata exclusion-vector correction; retained native shooting/RAW/Playback paths inherit separately",
+      "evidence_level": "DEVICE VERIFIED",
+      "evidence_source": "historical-evidence-summary.md#historical-device-reports",
+      "device_tested_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "inherited_from_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "structural_equivalence_source": "historical-evidence-summary.md#limited-delta-evidence",
+      "limitations": "2026-10-09 recorded user report that the correction worked; not every strength/slot combination, not flash readback, not a new camera test by this reviewer."
+    },
+    {
+      "feature": "per-file identity",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "scope": "capture Path A / DNG 0x010C..0x0111 / RAW restore",
+      "evidence_level": "INHERITED BY STRUCTURAL EQUIVALENCE",
+      "evidence_source": "historical-evidence-summary.md#historical-device-reports",
+      "device_tested_candidate_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "inherited_from_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "structural_equivalence_source": "historical-evidence-summary.md#limited-delta-evidence",
+      "limitations": "Only selected historical files were individually read back; do not invent six-slot exhaustive file measurements."
+    },
+    {
+      "feature": "RAW Development",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "scope": "six-slot list / As Shot / rendering / native Grain",
+      "evidence_level": "INHERITED BY STRUCTURAL EQUIVALENCE",
+      "evidence_source": "historical-evidence-summary.md#historical-device-reports",
+      "device_tested_candidate_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "inherited_from_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "structural_equivalence_source": "historical-evidence-summary.md#limited-delta-evidence",
+      "limitations": "Historical version-linked report plus static/offline checks; no fresh final-golden exhaustive camera test."
+    },
+    {
+      "feature": "Playback",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "scope": "identity/icon/name / per-file parameters / native Grain formatter",
+      "evidence_level": "INHERITED BY STRUCTURAL EQUIVALENCE",
+      "evidence_source": "historical-evidence-summary.md#historical-device-reports",
+      "device_tested_candidate_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "inherited_from_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "structural_equivalence_source": "historical-evidence-summary.md#limited-delta-evidence",
+      "limitations": "Preserved paths inherited; new legacy-color encoding correction has its separate direct report. Old unsupported metadata does not recover strength."
+    },
+    {
+      "feature": "UserData / U / BOX",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "scope": "sanitizer / private state / shared persistence architecture",
+      "evidence_level": "INHERITED BY STRUCTURAL EQUIVALENCE",
+      "evidence_source": "historical-evidence-summary.md#historical-device-reports",
+      "device_tested_candidate_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "inherited_from_sha256": "a2fcd40bc0897231a7e1fddcb8f8cd7c8b9f70bbc94514cfda724ff18adb7db7",
+      "structural_equivalence_source": "historical-evidence-summary.md#limited-delta-evidence",
+      "limitations": "Whole-build acceptance does not prove every durable write or U/BOX combination; sanitizer conclusions are static; systematic rollback compatibility NOT FULLY PROVEN."
+    },
+    {
+      "feature": "official bootable restore",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": null,
+      "scope": "Historical report of official restore while camera still boots",
+      "evidence_level": "UNKNOWN",
+      "evidence_source": "historical-evidence-summary.md#recovery-and-memory",
+      "device_tested_candidate_sha256": null,
+      "inherited_from_sha256": null,
+      "structural_equivalence_source": null,
+      "limitations": "Exact source-candidate binding in the available restore receipt is incomplete. Do not assert direct restore evidence for the final golden, arbitrary custom state or complete boot failure."
+    },
+    {
+      "feature": "RAM / RAW object",
+      "firmware_baseline": "d6a3c9c288d784080e7b283222ecdd8752adfeed6faa36dab44f73115354bfd4",
+      "research_candidate_sha256": "93588df2bb84bdf121df48c42ff582e9cc8cbdcd21f2046276d30d239fcd9465",
+      "scope": "Historical runtime RAW allocation of 0x800 bytes, 3 x 20 x 17 parameter model",
+      "evidence_level": "STATIC_VERIFIED",
+      "evidence_source": "historical-evidence-summary.md#recovery-and-memory",
+      "device_tested_candidate_sha256": null,
+      "inherited_from_sha256": null,
+      "structural_equivalence_source": null,
+      "limitations": "Static source notes / prior desktop checks only. Heap/stack peaks, fragmentation and RAM headroom not measured. One-word zero-growth delta does not mean total RAW RAM cost is zero."
+    }
+  ]
+}
